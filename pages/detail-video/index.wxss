@@ -1,0 +1,29 @@
+page {
+  padding-top: 225px;
+}
+.video {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 210px;
+}
+
+.info {
+  padding: 30rpx;
+}
+
+.info .title {
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.info .desc,
+.info .other {
+  font-size: 24rpx;
+  margin-top: 10rpx;
+  color: #666;
+}
+
+.recommend {
+  padding: 30rpx;
+}

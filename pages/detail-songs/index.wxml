@@ -1,0 +1,9 @@
+<block wx:if="{{type === 'rank'}}">
+  <area-header title="{{songInfo.name}}"></area-header>
+</block>
+<block wx:elif="{{type === 'list'}}">
+  <song-header songInfo="{{songInfo}}"></song-header>
+</block>
+<block wx:for="{{songInfo.tracks}}">
+  <song-item-v2 index="{{index + 1}}" itemInfo="{{item}}"></song-item-v2>
+</block>

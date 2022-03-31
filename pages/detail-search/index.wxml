@@ -1,0 +1,28 @@
+<!-- 搜索框 -->
+<van-search bind:click-input="handleSearchClick" bind:change="handleSearchEvent" bind:search="handleSearchAction" value="{{searchValue}}" placeholder="请输入搜索关键词" background="#fafafa" shape="round"></van-search>
+<!-- 热门搜索 -->
+<view class="hot-search" wx:if="{{!searchValue.length && !suggestSongs.length}}">
+  <area-header title="热门搜索">
+    <view></view>
+  </area-header>
+  <view class="hotwords">
+    <block wx:for="{{hotWords}}" wx:key="first">
+      <view class="tag" bindtap="tagClick" data-keyword="{{item.first}}">{{item.first}}</view>
+    </block>
+  </view>
+</view>
+<!-- 建议搜索 -->
+<view class="suggest" wx:elif="{{suggestSongs.length && !searchResult.length}}">
+  <view class="title">搜索"{{searchValue}}"</view>
+  <view class="suggest-list">
+    <block wx:for="{{suggestSongsNodes}}" wx:key="keyword">
+      <view class="suggest-item" bindtap="suggestItemClick" data-index="{{index}}">
+        <image class="icon" mode="widthFix" src="/assets/icons/search_icon.png" />
+        <!-- <text class="text">{{item.keyword}}</text> -->
+        <rich-text nodes="{{item}}"></rich-text>
+      </view>
+    </block>
+  </view>
+</view>
+<!-- 搜索结果 -->
+<view class="result"></view>

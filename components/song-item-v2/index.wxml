@@ -1,0 +1,16 @@
+<view class="item">
+  <view class="index">{{index}}</view>
+  <view class="info">
+    <view class="name">{{itemInfo.name}}</view>
+    <view class="source">
+      <image class="icon" src="/assets/icons/sq_icon.png"></image>
+      <view>
+        <text>{{itemInfo.ar[0].name || itemInfo.artists[0].name}}</text>
+      </view>
+      <view wx:if="{{itemInfo.alia[0]}}">
+        <text class="dot">·</text>
+        <text>{{itemInfo.alia[0]}}</text>
+      </view>
+    </view>
+  </view>
+</view>

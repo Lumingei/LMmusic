@@ -1,0 +1,21 @@
+page {
+  padding: 0 20rpx !important;
+}
+
+.van-search {
+  padding: 20rpx 10rpx !important;
+}
+
+.van-search__content {
+  background-color: white !important;
+}
+
+.swiper {
+  border-radius: 10rpx;
+  overflow: hidden;
+  transform: translateY(0);
+}
+
+.swiper-item .swiper-image {
+  width: 100%;
+}

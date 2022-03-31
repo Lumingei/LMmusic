@@ -1,0 +1,13 @@
+<view class="header">
+  <view class="title">{{title}}</view>
+  <view class="right" bindtap="handleRightClick">
+    <view class="slot">
+      <slot></slot>
+    </view>
+    <view class="default">
+      <text>{{rightText}}</text>
+      <!-- <image class="icon" src="../../assets/icons/arrow-right.png" /> -->
+      <van-icon name="arrow" color="#999" size="16px" />
+    </view>
+  </view>
+</view>

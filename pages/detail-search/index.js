@@ -2,7 +2,7 @@ import { getHotSearch, getSearchSuggest, getSearchResult } from "../../service/a
 import { debounce } from "../../utils/debounce"
 import { stringToNodes } from "../../utils/string_nodes"
 
-const debounceGetSearchSuggest = debounce(getSearchSuggest)
+const debounceGetSearchSuggest = debounce(getSearchSuggest, 200)
 
 Page({
   data: {
@@ -25,9 +25,11 @@ Page({
 
   //事件处理
   handleSearchEvent(event) {
+    //输入字符
     const searchValue = event.detail
+    //输入字符为空
     if (!searchValue.length) {
-      this.setData({ suggestSongs: [], searchValue: "" })
+      this.setData({ suggestSongs: [], searchValue: "" , searchResult: []})
       return
     }
     this.setData({ searchValue })
@@ -48,7 +50,8 @@ Page({
   handleSearchAction() {
     const searchValue = this.data.searchValue
     getSearchResult(searchValue).then(res => {
-      this.setData({searchResult: res.result.songs})
+      if(res.result.songs)
+        this.setData({searchResult: res.result.songs})
     })
   },
 

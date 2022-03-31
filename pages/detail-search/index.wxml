@@ -1,5 +1,5 @@
 <!-- 搜索框 -->
-<van-search bind:click-input="handleSearchClick" bind:change="handleSearchEvent" bind:search="handleSearchAction" value="{{searchValue}}" placeholder="请输入搜索关键词" background="#fafafa" shape="round"></van-search>
+<van-search class="search" bind:click-input="handleSearchClick" bind:change="handleSearchEvent" bind:search="handleSearchAction" value="{{searchValue}}" placeholder="请输入搜索关键词" background="#fafafa" shape="round" show-action="{{searchValue}}"></van-search>
 <!-- 热门搜索 -->
 <view class="hot-search" wx:if="{{!searchValue.length && !suggestSongs.length}}">
   <area-header title="热门搜索">
@@ -25,4 +25,11 @@
   </view>
 </view>
 <!-- 搜索结果 -->
-<view class="result"></view>
+<view class="result" wx:elif="{{searchResult.length}}">
+  <view class="title">最佳匹配</view>
+  <view class="list">
+    <block wx:for="{{searchResult}}">
+      <song-item-v2 itemInfo="{{item}}" index="{{index + 1}}"></song-item-v2>
+    </block>
+  </view>
+</view>

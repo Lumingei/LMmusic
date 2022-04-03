@@ -1,6 +1,6 @@
-import { getMVURL } from '../../service/api_video'
-import { getMVDetail } from '../../service/api_video'
-import { getRelatedMV } from '../../service/api_video'
+import { getMVURL } from '../../../service/api_video'
+import { getMVDetail } from '../../../service/api_video'
+import { getRelatedMV } from '../../../service/api_video'
 
 Page({
   data: {

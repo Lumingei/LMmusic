@@ -1,5 +1,5 @@
-import { rankingStore, playerStore } from '../../store/index'
-import { getSongListDetail } from'../../service/api_music'
+import { rankingStore, playerStore } from '../../../store/index'
+import { getSongListDetail } from'../../../service/api_music'
 
 Page({
   data: {

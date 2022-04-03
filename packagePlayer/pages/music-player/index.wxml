@@ -1,4 +1,4 @@
-<wxs module="format" src="../../utils/format.wxs"></wxs>
+<wxs module="format" src="../../../utils/format.wxs"></wxs>
 <!-- 背景 -->
 <image class="bg-image" mode="aspectFill" src="{{currentSong.al.picUrl}}"></image>
 <view class="bg-cover"></view>
@@ -32,13 +32,13 @@
       </view>
     </view>
     <view class="operation">
-      <image class="btn btn-mode" src="/assets/player/play_{{playModeName}}.png" bindtap="handleModeClick"></image>
-      <image class="btn btn-prev" src="/assets/player/play_prev.png" bindtap="handlePrevMusic"></image>
-      <image class="btn btn-pause" src="/assets/player/play_{{isPlayingName}}.png" bindtap="handlePlayClick"></image>
-      <image class="btn btn-next" src="/assets/player/play_next.png" bindtap="handleNextMusic"></image>
-      <image class="btn btn-music" src="/assets/player/play_music.png" bindtap="handleMusicListClick"></image>
+      <image class="btn btn-mode" src="/packagePlayer/assets/player/play_{{playModeName}}.png" bindtap="handleModeClick"></image>
+      <image class="btn btn-prev" src="/packagePlayer/assets/player/play_prev.png" bindtap="handlePrevMusic"></image>
+      <image class="btn btn-pause" src="/packagePlayer/assets/player/play_{{isPlayingName}}.png" bindtap="handlePlayClick"></image>
+      <image class="btn btn-next" src="/packagePlayer/assets/player/play_next.png" bindtap="handleNextMusic"></image>
+      <image class="btn btn-music" src="/packagePlayer/assets/player/play_music.png" bindtap="handleMusicListClick"></image>
       <van-popup show="{{ isShowPopup }}" position="bottom" custom-style="height: 60%; width: 96%; margin: 0 2% " round closeable bind:close="closePopup">
-        <block wx:for="{{playList}}">
+        <block wx:for="{{playList}}" wx:key="index">
           <song-item-v2 index="{{index + 1}}" itemInfo="{{item}}" bindtap="handleItemClick" data-index="{{index}}"></song-item-v2>
         </block>
       </van-popup>

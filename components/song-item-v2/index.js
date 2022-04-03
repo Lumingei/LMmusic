@@ -21,7 +21,7 @@ Component({
       this.triggerEvent("click")
       // 跳到播放页
       wx.navigateTo({
-        url: '/pages/music-player/index?id=' + id,
+        url: '/packagePlayer/pages/music-player/index?id=' + id,
       })
       playerStore.dispatch("playMusicWithIdAction", { id })
     }

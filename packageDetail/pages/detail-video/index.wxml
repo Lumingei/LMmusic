@@ -1,5 +1,5 @@
 <video class="video" src="{{mvURLInfo.url}}" autoplay="{{true}}" referrer-policy="origin"></video>
-<wxs src="../../utils/format.wxs" module="format"></wxs>
+<wxs src="../../../utils/format.wxs" module="format"></wxs>
 <view class="info">
   <view class="title">{{ mvDetail.name }}</view>
   <view class="desc">{{ mvDetail.artistName }} - {{ mvDetail.alias[0] }}</view>

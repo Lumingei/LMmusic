@@ -26,7 +26,7 @@ Page({
 
   },
   onLoad(options) {
-    playerStore.dispatch("playMusicWithIdAction", { id: 1842025914 })
+    // playerStore.dispatch("playMusicWithIdAction", { id: 1842025914 })
 
     this.getPageData()
 
@@ -60,7 +60,7 @@ Page({
 
   handleSearchClick() {
     wx.navigateTo({
-      url: '/pages/detail-search/index'
+      url: '/packageDetail/pages/detail-search/index'
     })
   },
 
@@ -104,11 +104,9 @@ Page({
     this.setData({isShowPopup: false})
   },
   
-  
-
   navigateToSongs(rankingName) {
     wx.navigateTo({
-      url: `/pages/detail-songs/index?rankingName=${rankingName}&type=rank`
+      url: `/packageDetail/pages/detail-songs/index?rankingName=${rankingName}&type=rank`
     })
   },
 

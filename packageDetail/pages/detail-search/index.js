@@ -1,6 +1,6 @@
-import { getHotSearch, getSearchSuggest, getSearchResult } from "../../service/api_search"
-import { debounce } from "../../utils/debounce"
-import { stringToNodes } from "../../utils/string_nodes"
+import { getHotSearch, getSearchSuggest, getSearchResult } from "../../../service/api_search"
+import { debounce } from "../../../utils/debounce"
+import { stringToNodes } from "../../../utils/string_nodes"
 
 const debounceGetSearchSuggest = debounce(getSearchSuggest, 200)
 

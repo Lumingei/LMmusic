@@ -46,7 +46,7 @@ Page({
     const id = event.currentTarget.dataset.item.id
     //页面跳转
     wx.navigateTo({
-      url: '../detail-video/index?id=' + id
+      url: '/packageDetail/pages/detail-video/index?id=' + id
     })
   },
 

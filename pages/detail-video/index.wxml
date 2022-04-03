@@ -12,7 +12,7 @@
   <view class="title">推荐视频</view>
   <view class="video-list">
     <block wx:for="{{relatedMV}}" wx:key="vid">
-      <video-list-item2 itemInfo="{{item}}"></video-list-item2>
+      <video-item-v2 itemInfo="{{item}}"></video-item-v2>
     </block>
   </view>
 </view>

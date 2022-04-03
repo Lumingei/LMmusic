@@ -1,0 +1,1 @@
+export const navigationHeight = 44

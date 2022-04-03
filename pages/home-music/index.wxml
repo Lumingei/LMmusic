@@ -13,7 +13,7 @@
   <area-header title="推荐歌曲" bind:click="handleMoreClick"></area-header>
   <view class="recommend-songs">
     <block wx:for="{{recommend}}" wx:key="id">
-      <song-item-v1 itemInfo="{{item}}"></song-item-v1>
+      <song-item-v1 itemInfo="{{item}}" bindtap="handleItemClick" data-index="{{index}}"></song-item-v1>
     </block>
   </view>
 </view>
@@ -29,3 +29,21 @@
     <ranking-list-item itemInfo="{{item}}" bindtap="handleRankingClick" data-item="{{item}}" data-idx="{{index}}"></ranking-list-item>
   </block>
 </view> -->
+<!-- 播放工具栏 -->
+<view class="play-bar-placeholder" wx:if="{{currentSong.id}}"></view>
+>
+<view class="play-bar" wx:if="{{currentSong.id}}" bindtap="handlePlayBarClick">
+  <view class="left">
+    <image class="album album-anim" style="animation-play-state: {{playAnimState}};" mode="aspectFill" src="{{currentSong.al.picUrl}}"></image>
+    <view class="name">{{currentSong.name}}</view>
+  </view>
+  <view class="right">
+    <image class="icon play" src="/assets/music/{{ isPlaying ? 'pause': 'play' }}_icon.png" catchtap="handlePlayBtnClick"></image>
+    <image class="icon playlist" src="/assets/music/playlist_icon.png" catchtap="handleMusicListClick"></image>
+  </view>
+</view>
+<van-popup show="{{ isShowPopup }}" position="bottom" custom-style="height: 60%; width: 96%; margin: 0 2% " round closeable bind:close="closePopup">
+  <block wx:for="{{playList}}">
+    <song-item-v2 index="{{index + 1}}" itemInfo="{{item}}" bindtap="handleItemClick" data-index="{{index}}"></song-item-v2>
+  </block>
+</van-popup>

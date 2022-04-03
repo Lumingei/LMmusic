@@ -30,17 +30,21 @@ Page({
     //输入字符为空
     if (!searchValue.length) {
       this.setData({ suggestSongs: [], searchValue: "" , searchResult: []})
+      debounceGetSearchSuggest.cancel()
       return
     }
     this.setData({ searchValue })
     
+    // 防抖处理
     debounceGetSearchSuggest(searchValue).then(res => {
+      // if (!this.data.searchValue.length) {
+      //   return
+      // }
       const suggestSongs = res.result.allMatch
       this.setData({ suggestSongs })
-      // console.log(suggestSongs);
+      if (!suggestSongs) return
       
       const suggestKeyWords = suggestSongs.map(item => item.keyword)
-      // console.log(suggestKeyWords)
 
       const suggestSongsNodes = stringToNodes(suggestKeyWords, searchValue)
       this.setData({suggestSongsNodes})

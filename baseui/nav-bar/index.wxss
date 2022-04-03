@@ -1,0 +1,42 @@
+.nav-bar {
+  display: flex;
+  height: 44px;
+  color: white;
+  line-height: 44px;
+  text-align: center;
+}
+
+.left,
+.right,
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120rpx;
+}
+
+.center {
+  flex: 1;
+}
+
+.left .left-slot:empty + .left-arrow {
+  display: block;
+}
+
+.left .left-arrow {
+  display: none;
+}
+
+.left .left-arrow .icon {
+  display: block;
+  padding-top: 10rpx;
+  width: 40rpx;
+}
+
+.center .center-slot:empty + .center-title {
+  display: block;
+}
+
+.center .center-title {
+  display: none;
+}

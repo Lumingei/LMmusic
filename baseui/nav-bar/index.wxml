@@ -1,0 +1,20 @@
+<view class="nav">
+  <view class="status" style="height: {{statusBarHeight}}px;"></view>
+  <view class="nav-bar" style="height: {{navBarHeight}}px;">
+    <view class="left" bindtap="handleLeftClick">
+      <view class="left-slot">
+        <slot name="left" aria-checked=""></slot>
+      </view>
+      <view class="left-arrow">
+        <image class="icon" mode="widthFix" src="../../assets/icons/arrow_left.png" />
+      </view>
+    </view>
+    <view class="center">
+      <view class="center-slot">
+        <slot name="center"></slot>
+      </view>
+      <view class="center-title">{{centerTitle}}</view>
+    </view>
+    <view class="right">右边</view>
+  </view>
+</view>

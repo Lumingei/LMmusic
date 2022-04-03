@@ -5,5 +5,5 @@
   <song-header songInfo="{{songInfo}}"></song-header>
 </block>
 <block wx:for="{{songInfo.tracks}}">
-  <song-item-v2 index="{{index + 1}}" itemInfo="{{item}}"></song-item-v2>
+  <song-item-v2 index="{{index + 1}}" itemInfo="{{item}}" bindtap="handleItemClick" data-index="{{index}}"></song-item-v2>
 </block>

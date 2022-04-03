@@ -4,6 +4,9 @@
     "area-header": "/components/area-header/index",
     "song-item-v1": "/components/song-item-v1/index",
     "song-list": "/components/song-list/index",
-    "ranking-list-item": "/components/ranking-list-item/index"
+    "ranking-list-item": "/components/ranking-list-item/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "song-item-v2": "/components/song-item-v2/index"
+
   }
 }

@@ -27,7 +27,7 @@ Component({
     handleListItemClick(event) {
       const item = event.currentTarget.dataset.item
       wx.navigateTo({
-        url: `/pages/detail-songs/index?id=${item.id}&type=list`
+        url: `/packageDetail/pages/detail-songs/index?id=${item.id}&type=list`
       })
     }
   }

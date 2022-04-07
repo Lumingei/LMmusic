@@ -90,7 +90,7 @@ Page({
 
   handlePlayBarClick() {
     wx.navigateTo({
-      url: "/pages/music-player/index?id=" + this.data.currentSong.id
+      url: "/packagePlayer/pages/music-player/index?id=" + this.data.currentSong.id
     })
   },
 

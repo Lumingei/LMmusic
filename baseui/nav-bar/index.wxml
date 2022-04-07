@@ -15,6 +15,6 @@
       </view>
       <view class="center-title">{{centerTitle}}</view>
     </view>
-    <view class="right">右边</view>
+    <view class="right"></view>
   </view>
 </view>

@@ -1,25 +1,25 @@
 # LMmusic
 A wechat miniprogram music player
 
-#### 目录结构：
+### 目录结构：
 
 <img src="/pagesPic/0.目录结构.jpg" alt="0.目录结构" style="zoom: 67%;" />
 
-#### 页面展示：
+### 页面展示：
 
-##### 1.音乐首页-轮播图+推荐歌曲
+#### 1.音乐首页-轮播图+推荐歌曲
 
 <img src="/pagesPic/1.音乐首页-轮播图+推荐歌曲.jpg" alt="1.音乐首页-轮播图+推荐歌曲" style="zoom:67%;" />
 
-##### 2.音乐首页-热门歌单+推荐歌单
+#### 2.音乐首页-热门歌单+推荐歌单
 
 <img src="/pagesPic/2.音乐首页-热门歌单+推荐歌单.jpg" alt="2.音乐首页-热门歌单+推荐歌单" style="zoom:67%;" />
 
-##### 3.音乐首页-排行榜
+#### 3.音乐首页-排行榜
 
 <img src="/pagesPic/3.音乐首页-排行榜.jpg" alt="3.音乐首页-排行榜" style="zoom:67%;" />
 
-##### 4.搜索详情页
+#### 4.搜索详情页
 
 <img src="/pagesPic/4.搜索详情页-1.png" alt="4.搜索详情页-1" style="zoom:67%;" />
 
@@ -27,26 +27,26 @@ A wechat miniprogram music player
 
 <img src="/pagesPic/4.搜索详情页-3.png" alt="4.搜索详情页-3" style="zoom:67%;" />
 
-##### 5.歌单详情页
+#### 5.歌单详情页
 
 <img src="/pagesPic/5.歌单详情页.png" alt="5.歌单详情页" style="zoom:67%;" />
 
-##### 6.排行榜详情页
+#### 6.排行榜详情页
 
 <img src="/pagesPic/6.排行榜详情页.jpg" alt="6.排行榜详情页" style="zoom:67%;" />
 
-##### 7.音乐播放页-歌曲
+#### 7.音乐播放页-歌曲
 
 <img src="/pagesPic/7.音乐播放页-歌曲.png" alt="7.音乐播放页-歌曲" style="zoom:67%;" />
 
-##### 8.音乐播放页-歌词
+#### 8.音乐播放页-歌词
 
 <img src="/pagesPic/8.音乐播放页-歌词.png" alt="8.音乐播放页-歌词" style="zoom:67%;" />
 
-##### 9.视频首页
+#### 9.视频首页
 
 <img src="/pagesPic/9.视频首页.jpg" alt="9.视频首页" style="zoom:67%;" />
 
-##### 10.视频详情页
+#### 10.视频详情页
 
 <img src="/pagesPic/10.视频详情页.jpg" alt="10.视频详情页" style="zoom:67%;" />
